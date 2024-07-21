@@ -179,6 +179,18 @@ nav ul li a:hover {
     border: none;
 }
 
+.stamp-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stamp-centered img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Layout Styles */
 .three-column-layout {
     display: flex;
@@ -591,4 +603,16 @@ footer {
 .blinkie {
     max-width: 100%;
     height: auto;
+}
+
+.blinkie-link {
+    text-decoration: none;
+}
+
+.blinkie-link:hover {
+    text-decoration: none;
+}
+
+.blinkie-link img {
+    border: none;
 }
