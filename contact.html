@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Binx</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="crt-overlay"></div>
+    <div class="container">
+        <header>
+            <h1 id="contact-title">Contact</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects/projectsHome.html">Projects</a></li>
+                    <li><a href="blog/blogHome.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contact-layout">
+            <section class="content-box">
+                <h2>&lt;Contact&gt;</h2>
+                <p>In order to reach me by email, please copy/paste and run the python
+                        script below</p>
+                        <p>If you don't have python installed, you can use an online IDE such as <a href="https://www.online-python.com/">https://www.online-python.com/</a></p>
+                <p>This is done to reduce spam :)</p>
+                <div class="changelog-box" id="changelog">
+                    <pre>
+import numpy
+import string
+
+secret = "\xbc\xc3\xc8\xd2\x40\xbc\xc3\xc8\xd2\x2e\xca\xbb\xc1\xbf"
+
+alpha = string.ascii_letters
+alpha_length = len(alpha)
+matrix = numpy.identity(alpha_length, dtype=numpy.int32)
+matrix[:alpha_length, alpha_length-1] = 1
+
+ascii_values = numpy.array(list(map(ord, alpha)), dtype=numpy.int32)
+transformed_ascii = ''.join(map(chr, numpy.dot(matrix, ascii_values)))
+decrypt_matrix = str.maketrans(transformed_ascii, alpha)
+
+decoded = secret.translate(decrypt_matrix)
+
+print(decoded)
+                    </pre>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <p>updated <span id="last-updated">July 21, 2024</span></p>
+                <p>web created July 19, 2024</p>
+                <p>unless stated otherwise, all images in this site are not mine, but text in this site belongs to me
+                    (binx)</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binx's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <div id="crt-overlay"></div>
+    <div class="container">
+        <header>
+            <h1 id="blog-title" class="glitch" data-text="Blog">Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/projectsHome.html">Projects</a></li>
+                    <li><a href="blogHome.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="stamp-row">
+                <img src="https://64.media.tumblr.com/0a31c2e1d2bcc5df2eb98e31eb2110b1/79d8b316934d24c3-5d/s100x200/4b7c20c8acdb2df5bf732f5200d06af94ae21fbe.gifv"
+                    alt="Stamp">
+                <img src="https://64.media.tumblr.com/1d959a1a75c1d8e9099f6d6f5796da73/d79b386dd434d7d8-98/s100x200/204e13a1040c65b915d58be318c114f42a88e923.gifv"
+                    alt="Stamp">
+                <img src="https://64.media.tumblr.com/3409d6decb6a23c02422af2746b263d3/d79b386dd434d7d8-07/s100x200/951b3a9fbbb3e829fe8aaf6878e43c45c9a0c378.jpg"
+                    alt="Stamp">
+                <img src="https://64.media.tumblr.com/01b65aea0822a6c2d0b70f9d8d80b26c/79d8b316934d24c3-9a/s100x200/43761549990611a65717f4d97a3cbff5becdd5f9.gifv"
+                    alt="Stamp">
+            </div>
+        </header>
+
+        <main class="blog-layout">
+            <aside class="blog-sidebar">
+                <div class="content-box">
+                    <h2 class="sidebar-title">&lt;Note&gt;</h2>
+                    <p>This blog is under construction. I'm working on it, but it's not ready yet.</p>
+                    <p>I'm still working on a method of documentation which flows with the way I think and perform research. 
+                        I'm not sure how I want to do it yet, but I'm getting closer thanks to finally using tools like <a href="https://obsidian.md/">Obsidian</a>.</p>
+                </div>
+
+                <div class="content-box">
+                    <ul id="blog-categories">
+                        <li><a href="../blog/blogHome.html" data-category="Development">Development</a></li>
+                        <li><a href="../blog/blogHome.html" data-category="Personal">Personal</a></li>
+                        <!-- Add more categories here -->
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="blog-content">
+                <div class="content-box">
+                    <h2>&lt;Recent&gt;</h2>
+                    <ul id="blog-posts-list">
+                        <li>
+                            <h3><a href="blog1.html">Why Creating a Blog Might Be a Good Idea</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date">July 20, 2024</span>
+                                <span class="post-category">Development</span>
+                            </div>
+                            <p>Exploring the benefits of maintaining a personal blog...</p>
+                        </li>
+                        <li>
+                            <h3><a href="blog2.html">My Quest to Finish My Website</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date">July 19, 2024</span>
+                                <span class="post-category">Personal</span>
+                            </div>
+                            <p>The journey of creating and completing my personal website...</p>
+                        </li>
+                        <!-- Add more blog posts here -->
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <p>updated <span id="last-updated">July 21, 2024</span></p>
+                <p>web created July 19, 2024</p>
+                <p>unless stated otherwise, all images in this site are not mine, but text in this site belongs to me
+                    (binx)</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
