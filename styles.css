@@ -255,7 +255,7 @@ nav ul li a:hover {
     padding: 10px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     max-height: 200px;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -285,12 +285,16 @@ nav ul li a:hover {
 
 /* Stamps Box Styles */
 .stamps-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     max-height: 200px;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -310,9 +314,9 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-.stamps-box .stamp-image {
-    display: block;
-    margin-bottom: 10px;
+.stamp-image {
+    max-width: 100px;
+    height: auto;
 }
 
 /* Button Styles */
@@ -595,7 +599,7 @@ footer {
     overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     box-shadow: 0 0 5px rgba(249, 168, 117, 0.3);
 }

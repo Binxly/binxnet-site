@@ -24,7 +24,7 @@ const SHAPES = [
 ];
 
 const COLORS = ['#7c3f58', '#eb6b6f', '#f9a875', '#fff6d3', '#7c3f58', '#eb6b6f', '#f9a875'];
-
+// #799496 #DDDBF1
 function newPiece() {
     const shapeIndex = Math.floor(Math.random() * SHAPES.length);
     const shape = SHAPES[shapeIndex];
